@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Подключаем шрифт Montserrat Light */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Подключаем шрифт Montserrat Regular */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Подключаем шрифт Montserrat Bold */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Устанавливаем шрифт по умолчанию */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.my-gradient {
+  background: linear-gradient(to right, #8176af, #c0b7e8);
+}
+.swiper-slide {
+  filter: blur(3px);
+  opacity: 0.5;
+  padding-top: 1.5rem;
+  width: 300px !important; /* Увеличиваем ширину */
+  height: 500px !important; /* Увеличиваем высоту */
+  transition: all 0.3s ease;
+}
+
+.swiper-slide-active {
+  padding: 0;
+  filter: blur(0px);
+  border-radius: 100px;
+  opacity: 1;
+  width: 400px !important; /* Увеличиваем ширину */
+  height: 600px !important; /* Увеличиваем высоту */
+}
