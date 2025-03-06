@@ -46,8 +46,10 @@ const StepsSection = () => {
 
           <div className="relative flex flex-col items-center text-center">
             <div className="absolute w-36 h-36 bg-[#8176AF]/20 rounded-full -z-10" />
-            <img src="./circle.png" alt="Step 2" />
-            <img src="./02.svg" className="absolute pt-14" />
+
+            <img className="relative z-10 " src="./circle.png" alt="Step 2" />
+
+            <img className="absolute pt-14 z-20" src="./02.svg" />
             <h1 className="mt-2 font-bold flex items-center gap-2">
               <img src="./shape.svg" alt="Arrow" className="hidden sm:block" />
               Interaction Design

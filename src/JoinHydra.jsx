@@ -34,25 +34,25 @@ const JoinHydra = () => {
       id="join"
       className="bg-[#343045] py-16 px-4 text-white flex justify-center items-center"
     >
-      <div className="w-[1275px] h-[1100px]">
-        <div className="bg-gradient-to-b from-[#433D60] to-[#211E2E] rounded-3xl p-8 md:p-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">
+      <div className="">
+        <div className="w-[1275px] h-[800px] bg-[radial-gradient(circle_at_center,_#433D60,_#211E2E)] rounded-3xl p-8 md:p-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-3">
             JOIN HYDRA
           </h2>
           <img src="./vector16.svg" className="pl-90 pt-6 pb-6" />
-          <p className="text-center text-2xl font-light mb-8 pb-3">
+          <p className="text-center text-2xl font-light mb-9 pb-3">
             Let's Build Your VR Experience
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <input
                 type="text"
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name"
-                className="bg-[#2E2B3D] rounded-full px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
+                className="bg-[#2E2B3D] h-[72px] w-[564px] rounded-full px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
               />
               <input
                 type="text"
@@ -60,7 +60,7 @@ const JoinHydra = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name"
-                className="bg-[#2E2B3D] rounded-full px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
+                className="bg-[#2E2B3D] h-[72px] w-[564px] rounded-full px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
               />
             </div>
 
@@ -72,7 +72,7 @@ const JoinHydra = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="bg-[#2E2B3D] rounded-full px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
+                className="bg-[#2E2B3D] h-[72px] w-[564px] rounded-full px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
               />
               <input
                 type="tel"
@@ -82,7 +82,7 @@ const JoinHydra = () => {
                 title="Please enter only digits."
                 onChange={handleChange}
                 placeholder="Phone Number"
-                className="bg-[#2E2B3D] rounded-full px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
+                className="bg-[#2E2B3D] h-[72px] w-[564px] rounded-full px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
               />
             </div>
 
@@ -94,7 +94,7 @@ const JoinHydra = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 placeholder="Subject"
-                className="bg-[#2E2B3D] w-full rounded-full px-4 py-2  border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
+                className="bg-[#2E2B3D] h-[72px] w-[1158px] rounded-full px-4 py-2  border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF]"
               />
             </div>
 
@@ -105,7 +105,7 @@ const JoinHydra = () => {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Tell us something..."
-                rows="4"
+                rows="6"
                 className="bg-[#2E2B3D] w-full rounded-2xl px-4 py-2 border border-white focus:outline-none focus:ring-2 focus:ring-[#8176AF] resize-none"
               />
             </div>
@@ -114,7 +114,7 @@ const JoinHydra = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-[#8176AF] text-black rounded-full px-6 py-2 font-light hover:scale-105 transition-transform"
+                className="bg-[#8176AF] w-[214px] h-[48px] text-black rounded-full px-6 py-2 font-light hover:scale-105 transition-transform"
               >
                 SEND TO HYDRA
               </button>

@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <div>
+    <div className="px-[26px] bg-[#343045]">
       <Navbar />
       <HeroSection />
       <AboutSection />

@@ -6,7 +6,7 @@ const TechnologiesSection = () => {
 
   return (
     <section id="technologies" className="bg-[#343045] text-white py-16 px-8">
-      <div className="relative w-full max-w-5xl h-[300px] mx-auto overflow-hidden mb-8">
+      <div className="relative w-full h-[300px] mx-auto overflow-hidden mb-8">
         <img
           src="./oval.png"
           alt="VR background"
@@ -14,16 +14,16 @@ const TechnologiesSection = () => {
         />
 
         {/* Текст и кнопка поверх изображения */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
-          <h2 className="text-xl md:text-2xl font-bold mb-2">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center pt-10">
+          <h2 className="pt-11 text-xl md:text-4xl font-bold mb-2">
             TECHNOLOGIES &amp; HARDWARE
           </h2>
-          <p className="text-sm md:text-base">USED BY HYDRA VR</p>
+          <p className="text-sm md:text-4xl">USED BY HYDRA VR</p>
 
           {/* Кнопка-стрелка для раскрытия/скрытия текста */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="mt-4 w-12 h-12 bg-[#8176AF] rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+            className="w-12 h-12 bg-[#8176AF] rounded-full flex items-center justify-center hover:scale-110 transition-transform"
           >
             <img
               src="./strelkavniz.svg"
@@ -50,7 +50,7 @@ const TechnologiesSection = () => {
       )}
 
       {/* Логотипы */}
-      <div className=" mx-auto flex flex-wrap justify-center items-center gap-6">
+      <div className=" mx-auto flex flex-wrap justify-center items-center gap-20">
         {/* Подставь свои логотипы */}
         <img src="./unrealengine.svg" alt="Unreal Engine" className="" />
         <img src="./unity.svg" alt="Unity" className="" />

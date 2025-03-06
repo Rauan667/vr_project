@@ -11,13 +11,13 @@ const Features = () => {
     <section id="services" className="bg-[#343045] text-white pl-10">
       <div className="w-full max-w-10xl">
         <div className="text-center">
-          <div className="flex pr-15">
-            <h1 className=" text-[30px] leading-tight">
-              <span className="font-bold">WHY BULD|</span>
-              <span className="font-light">WITH HYDRA?</span>
-            </h1>
-            <img className="pl-15" src="./strelka.svg" alt="arrow" />
-            <p className="mt-1 pl-70 font-regular">
+          <div className="flex">
+            <div className="flex flex-col text-[30px]">
+              <h1 className="font-bold">WHY BULD</h1>
+              <h1 className="font-light">WITH HYDRA?</h1>
+            </div>
+            <img className="" src="./strelka.svg" alt="arrow" />
+            <p className="mt-1 pl-30 font-regular">
               Vitae sapien pellentesque habitant morbi tristique senectus et
               netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
               lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt

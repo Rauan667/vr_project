@@ -28,7 +28,7 @@ const HeroSection = () => {
       </div>
 
       {/* Правая часть с изображением */}
-      <div className="relative left-54 w-[500px] h-[500px] mx-auto">
+      <div className="relative left-44 w-[500px] h-[500px] mx-auto">
         <div
           className="px-9 py-10 left-3 top-3 absolute w-full h-full z-100"
           style={{ clipPath: "url(#customShape)" }}
@@ -53,34 +53,41 @@ const HeroSection = () => {
         {/* Фото с кастомной формой */}
       </div>
       {/* Информационные карточки */}
-      <div className="bg-gradient-to-r from-[#3A3456] to-[#211E2E] absolute -bottom-41 left-1/2 transform -translate-x-1/2 w-full max-w-[1272px] h-[167px] grid grid-cols-3 gap-6 rounded-full shadow-lg px-10 py-8">
+      <div className="w-[1400px] bg-gradient-to-r from-[#3A3456] to-[#211E2E] absolute -bottom-60 grid grid-cols-3 rounded-full px-10 py-8">
         <div className="flex items-center gap-2">
           <img className="bg-transparent" src="./map.svg" />
-          <h3 className="bg-transparent text-lg font-semibold">
-            Pay Us a Visit
-          </h3>
-          <p className="bg-transparent text-sm text-gray-300">
-            Union St, Seattle, WA 98101
-          </p>
+          <div className="flex flex-col">
+            <h3 className="bg-transparent text-lg font-semibold">
+              Pay Us a Visit
+            </h3>
+            <p className="bg-transparent text-sm text-gray-300">
+              Union St, Seattle, WA 98101
+            </p>
+          </div>
         </div>
         <div className="flex pl-6 items-center gap-2">
           <img src="./vector5.svg" className="pr-6" />
           <img className="bg-transparent" src="./call.svg" />
-          <h3 className="bg-transparent text-lg font-semibold">
-            Give Us a Call
-          </h3>
-          <p className="bg-transparent text-sm text-gray-300">(110) 111-1010</p>
+          <div className="flex flex-col">
+            <h3 className="bg-transparent text-lg font-semibold">
+              Give Us a Call
+            </h3>
+            <p className="bg-transparent text-sm text-gray-300">
+              (110) 111-1010
+            </p>
+          </div>
         </div>
         <div className="flex items-center gap-2">
           <img src="./vector5.svg" className="pr-4" />
           <img className="bg-transparent" src="./mail.svg" />
-          <h3 className="bg-transparent text-lg font-semibold">
-            {" "}
-            Send Us a Message
-          </h3>
-          <p className="bg-transparent text-sm text-gray-300">
-            Contact@HydraVRTech.com
-          </p>
+          <div className="flex flex-col">
+            <h3 className="bg-transparent text-lg font-semibold">
+              Send Us a Message
+            </h3>
+            <p className="bg-transparent text-sm text-gray-300">
+              Contact@HydraVRTech.com
+            </p>
+          </div>
         </div>
       </div>
     </section>
